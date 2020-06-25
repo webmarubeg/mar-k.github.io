@@ -1,4 +1,4 @@
-<!--2020/6/10newup-->
+<!--2020/6/25newup-->
 
 <!DOCTYPE html>
 
@@ -6,6 +6,8 @@
   <head>
     <meta charset="utf-8">
      <title>where computers are based life</title>
+     <link href="./css/all.min.css" rel="stylesheet">
+     <!--<link href="https://use.fontawesome.com/releases/v5.6.1/css/all.css" rel="stylesheet"> -->
       <style type="text/css">  
       body {
           /* 浮かび上がる動きフェードインをやってみたい */
@@ -21,6 +23,7 @@
             border: 1px solid #0064D9;
             }
           #test01{
+              width: 30%;
               font-size: 18px;
           }
           .slill_memo, .html_memo, .css_memo, .js_memo{
@@ -34,7 +37,7 @@
 
         /* typewriter-action */
         .ityped-cursor {
-                font-size: 1em;
+                font-size: 3em;
                 opacity: 1;
                 -webkit-animation: blink 0.3s infinite;
                 -moz-animation: blink 0.3s infinite;
@@ -60,15 +63,17 @@
                 }
             }
             #ityped {
-            color: #a8aabc;
+                font-size: 48px;
+            color:#fff;
             }
             </style>
     </head>
     <body>
-
+<div id="nav"></div>
 <h1 id="test01">webを少しずつ作っていく記録</h1>
+
 <span id="ityped"></span>
-    <h1>以下は各内容で思いついたメモ一覧</h1>
+    <h1 id="hoge">以下は各内容で思いついたメモ一覧</h1>
 
     <h2 class="skill_memo">総合的に関係するメモ一覧</h2>
     <ul class="flex">
@@ -77,8 +82,9 @@
         <li class="task">その都度gitにアップしていくこと</li>
         <li class="task">あちらこちらに記録の分散が多いのも懸念事項</li>
         <li class="task">CSS3やjavascriptも並行して記載していく</li>
-        <li class="task"><a href="https://fontawesome.com/start">Font Awesomeを使ってみる</a></li>
+        <i class="fas fa-check-square"><a href="https://fontawesome.com/start">Font Awesomeを使ってみる</a></i>
         <li class="task">タイトル案は別途記載→確かなスキルへ</li>
+        <li class="task">ペラいち（一画面表示）で設計</li>
     </ul>
 
     <h2 class="html_memo">HTMLメモ一覧</h2>
@@ -91,26 +97,47 @@
      <ul class="flex">
          <li class="task">ブラウザはモダンブラウザ対応</li>
          <li class="task">flexレイアウトを標準にする</li>
+         <li class="task">スクロールスナップ(javascript機能と関連)</li>
      </ul>
-
+ 
      <h2 class="js_memo">javascriptメモ一覧</h2>
      <ul class="flex">
          <li class="task">画面上部に戻る動き</li>
          <li class="task">チェックマークの表示/非表示</li>
      </ul>
-
      <!-- 
      javascript案→https://coliss.com/articles/build-websites/operation/javascript/animated-typing-ityped.html <br>
 
      参考サイト：https://into-the-program.com/ityped-js/
     -->
      <h4>※最終的な案はシンプルイズベスト</h4>
+     <span id="onb"><i class="fas fa-arrow-circle-up fa-5x"></i></span>
 
      <script src="https://unpkg.com/ityped@1.0.3"></script>
      <script>
-         var test = 'Testing site creation on githubpages';
-     ityped.init(document.querySelector("#ityped"), {
-         strings: [test, 'Welcome to Into the Mypage!']})
+         const moji = 'Testing site creation on githubpages';
+         ityped.init(document.querySelector("#ityped"), {
+         strings: [moji, 'Welcome to Into the Mypage!','日本語OK?']
+         })
+
+        //画面上部移動設定
+         const element = document.getElementById('hoge');
+
+         // ボタンのクリックイベント
+        document.getElementById( "onb" ).onclick = function () {
+	    // メソッドを実行
+        element.scrollIntoView({
+            behavior: 'smooth',
+            block: 'start'
+        } ) ;
+        }
+
+        // 上端に来るようにスクロールさせたい
+        //element.scrollIntoView();  // or
+        //element.scrollIntoView(true);
+
+        // 下端に来るようにスクロールさせたい
+        //element.scrollIntoView(false);
      </script>
     </body>
  </html>
