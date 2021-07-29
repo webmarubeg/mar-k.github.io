@@ -1,0 +1,50 @@
+@charset "UTF-8";
+
+html,body,div,span,object,iframe,h1,h2,h3,h4,h5,h6,p,blockquote,pre,abbr,address,cite,code,del,dfn,em,img,ins,kbd,q,samp,small,strong,sub,sup,var,b,i,dl,dt,dd,ol,ul,li,fieldset,form,label,legend,table,caption,tbody,tfoot,thead,tr,th,td,article,aside,canvas,details,figcaption,figure,footer,header,hgroup,menu,nav,section,summary,time,mark,audio,video{
+	margin:0.1em;
+	padding:0.1em;
+	border:0;
+	outline:0;
+	font-size:100%;
+	vertical-align:baseline;
+	background:transparent
+	}
+
+body{
+	font-family: 'メイリオ', 'Hiragino Kaku Gothic Pro', sans-serif;
+
+	/*  background:green;*/
+		background:white;
+		 line-height:1;
+
+		  /* gradation処理 :*/
+		 background: #36d1dc; /* fallback for old browsers */
+		 background: -webkit-linear-gradient(to right, #36d1dc, #5b86e5); /* Chrome 10-25, Safari 5.1-6 */
+		 background: linear-gradient(to right, #36d1dc, #5b86e5); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+}
+
+ol, ul {
+	text-transform: uppercase;
+	list-style: none;
+	float:right;padding-top:8px; margin-right: 20px;
+	color:#fff;
+	}
+	li a{padding:2px 2px;letter-spacing: 0.2rem;font-size:0.8em;text-decoration:none;color:#fff;border-radius:5px;border-bottom: 1px dashed black;}
+	/*li a:hover{color:#000} */
+	li-masthead .active {
+	  color: #fff;
+	  border-bottom-color: #fff;
+	}
+	li{display:inline-block;margin:2px;}
+
+	h1{
+		font-size: 25px;
+	}
+	h2{font-size: 21px;
+	}
+	h3{
+		font-size: 18px;
+	}
+	h4{
+		font-size: 16px;
+	}
