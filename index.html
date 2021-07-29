@@ -1,204 +1,162 @@
-<!--2020/6/30newup-->
-
 <!DOCTYPE html>
+<html lang="ja" class="no-js">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width">
 
-<html lang="ja">
-  <head>
-    <meta charset="utf-8">
-     <title>where computers are based life</title>
-     <!-- コンピュータがある生活の意 -->
-     <link href="css/all.min.css" rel="stylesheet">
-     <meta name="viewport" content="width=device-width">
-     <!--<link href="https://use.fontawesome.com/releases/v5.6.1/css/all.css" rel="stylesheet"> -->
-      <style type="text/css">  
-      body {
-          background:gray;
+    <title>40unclelog-大したことやってないサイト </title>
+   
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/mainstyle.css">
+    <!--<link href="https://use.fontawesome.com/releases/v5.6.1/css/all.css" rel="stylesheet"> -->
 
-          }
+    <meta name="description" content="ページの説明文">
+    <meta property="og:title" content="ページのタイトル">
+    <meta property="og:description" content="ページの説明文">
+    <meta property="og:locale" content="ja_JP">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://mywebsite.com/page">
+    <link rel="canonical" href="https://mywebsite.com/page">
+       
+    <style type="text/css">
 
-          .flex {
-              padding: 10px;    
+      #headerLeft{
+        padding-left:0.5%;
+        border-bottom: 2px double black;
+        font-size:40px;color:gray;
+        font-weight:bold;display:block;
+        text-decoration:none;
+        line-height:30px;
+      }
+        .boxA {
+          margin-bottom: 20px;
+          display: flex;
+          display: -webkit-flex;
+          justify-content: center;
+          padding: 10px 20px 20px;
 
-              display: flex;
-              list-style: none;
-              flex-direction:column;
-              width: 650px; 
-              height: auto; 
-            border: 1px solid #0064D9;
+          border-bottom: 2px double black;
+        }
+  
+        .test1{
+          border: 1px dashed black;
+          width: 300px;
+          margin: 10px;
+          text-align: center;
+        /*  background-color: gainsboro; */
+          border-radius: 10px;
             }
+      article,aside,details,figcaption,figure,footer,header,hgroup,menu,nav,section{display:block}
+      article{border-bottom:2px dotted #998;padding-bottom:20px;margin-bottom:20px;text-align:center;}
 
-          #test01{
-              width: 40%;
-              font-size: 18px;
-          }
-          .slill_memo, .html_memo, .css_memo, .js_memo{
-              font-size: 16px;
-              margin: 30px;
-          }
-
-
-        /* typewriter-action */
-        .ityped-cursor {
-                font-size: 3em;
-                opacity: 1;
-                -webkit-animation: blink 0.3s infinite;
-                -moz-animation: blink 0.3s infinite;
-                animation: blink 0.3s infinite;
-                animation-direction: alternate;
-            }
-
-            @keyframes blink {
-                100% {
-                    opacity: 0;
-                }
-            }
-
-            @-webkit-keyframes blink {
-                100% {
-                    opacity: 0;
-                }
-            }
-
-            @-moz-keyframes blink {
-                100% {
-                    opacity: 0;
-                }
-            }
-            #ityped {
-                font-size: 48px;
-            color:#fff;
-            }
-
-            /* pagetop  */
-            #pagetop {
-                position: fixed;
-                right: 100px;
-                bottom: 30px;
-                display: block;
-                text-decoration: none;
-            }
-
-            .menu{
-                display:none;
-            }
-            </style>
-    </head>
-    <body>
-        <header class="header">
-            <button type="button" id="menubtn">
-                <i class="fa fa-bars"></i><span>MENU</span>
-            </button>
-            
-          <nav class="menu" id="menu">
-              <ul>
-                  <li><a href="#">トップ</a></li>
-                  <li><a href="#">about</a></li>
-                  <li><a href="#">Help</a></li>
-                  <li><a href="#">FORM</a></li>
-                </ul>
-          </nav>
-        </header><!-- header-end -->
-
-<h1 id="test01">webを少しずつ作っていく記録-期限をjavascriptで</h1>
-
-<span id="ityped"></span>
-    <h1 id="hoge">以下は各内容で思いついたメモ一覧</h1>
-
-    <h2 class="skill_memo">総合的に関係するメモ一覧</h2>
-    <ul class="flex">
-        <i class="far fa-square"> 以前のスキル一新するのが目標</i>
-        <i class="far fa-square"> WordPressのテンプレ作成が一つの案</i>
-        <i class="far fa-square"> その都度gitにアップしていくこと</i>
-        <i class="far fa-square"> あちらこちらに記録の分散が多いのも懸念事項</i>
-        <i class="far fa-square"> CSS3やjavascriptも並行して記載していく</i>
-        <i class="fas fa-check-square"> <a href="https://fontawesome.com/start">Font Awesomeを使う</a></i>
-        <i class="far fa-square"> ストック記事を９０個ぐらい用意</i>
-        <i class="far fa-square"> ペラいち（一画面表示）で設計</i>
-        <i class="far fa-square"> ソフトウェア試験の残り日数をjavascriptで。複数で作ってみるのもあり。githubpage</i>
-
-    </ul>
-
-    <h2 class="html_memo">HTMLメモ一覧</h2>
-     <uL class="flex">
-        <i class="far fa-square"> header、footerの基本構造を整える</i>
-        <i class="far fa-square"> navigationmenu追加</i>
-        <i class="fas fa-check-square"> 外部ファイルとしてCSSフォルダやjsフォルダを作成</i>
-        <i class="far fa-square"> レスポンシブデザインの設計を導入</i>
-
-     </uL>
-
-     <h2 class="css_memo">CSSメモ一覧</h2>
-     <ul class="flex">
-        <i class="far fa-square"> ブラウザはモダンブラウザ対応</i>
-        <i class="far fa-square"> flexレイアウトを標準にする</i>
-        <i class="far fa-square"> 上記関連メディアクエリを記述</i>
-        <i class="far fa-square"> レスポンシブによるhamburgermenuを追加</i>
-     </ul>
- 
-     <h2 class="js_memo">javascriptメモ一覧</h2>
-     <ul class="flex">
-         <i class="fas fa-check-square"> 画面上部に戻る動き</i>
-         <i class="far fa-check-square"> チェックマークの表示/非表示</i>
-         <i class="fas fa-check-square"> 浮かび上がる動きフェードインをやってみたい</i>
-     </ul>
-
-     <h2 class="css_memo">導入・検討した技術一覧</h2>
-     <ul class="flex">
-        <i class="far fa-square"> jqueryプラグイン</i>
-        <i class="far fa-square"> typewriter形式のギミック</i>
-        <i class="far fa-square"> cssによる矢印の右下・位置指定</i>
-     </ul>
-
-     <h2 class="css_memo">Font Awesome用メモ</h2>
-     <ul class="fa-ul">
-        <li><i class="fas fa-check-square"></i>List icons can</li>
-        <li><span class="fa-li"><i class="fas fa-check-square"></i></span>be used to</li>
-        <li><span class="fa-li"><i class="fas fa-spinner fa-pulse"></i></span>replace bullets</li>
-        <li><span class="fa-li"><i class="far fa-square"></i></span>in lists</li>
-      </ul>
-
-     <!-- 
-     javascript案→https://coliss.com/articles/build-websites/operation/javascript/animated-typing-ityped.html <br>
-
-     参考サイト：https://into-the-program.com/ityped-js/
-    -->
-     <h4>※最終的な案はシンプルイズベスト</h4>
-     <span id="pagetop"><a href="#"><i class="fas fa-arrow-circle-up fa-5x"></i></a></span>
-
-     <script src="https://unpkg.com/ityped@1.0.3"></script>
-     <script src="js/jquery-3.4.0.min.js"></script>
-     <script>
-         const moji = 'Testing site creation on githubpages';
-         ityped.init(document.querySelector("#ityped"), {
-         strings: [moji, 'Welcome to Into the Mypage!','日本語OK?']
-         })
+    .type{
+      clear: both;
+      border-style: solid;
+      border-color: #ffffff;
+      border-top-width: 0px;
+      border-bottom-width: 0px;
+      max-width: 100%;
+    }
 
 
-        //画面上部移動設定
-        $(function(){
-            var pagetop = $('#pagetop');
-            pagetop.hide();
-            $(window).scroll(function(){
-                if ($(this).scrollTop() > 100) {
-                    //フェードイン秒数設定
-                    pagetop.fadeIn(3000);
-                }else {
-                    //フェードアウト秒数設定
-                    pagetop.fadeOut(500);
-                }
-            });
-            pagetop.click(function(){
-                $('body,html').animate({
-                    scrollTop:0
-                }, 1500);
-                return false;
-            });
-        });
+      footer {
+      /*  background:#5b86e5; */
+        max-width: 1000px;
+        margin: auto;
+        clear: both;
+        letter-spacing: 0.2rem;
+        font-size: 0.6rem;
+        text-align: center;
+      }
+      footer a{color:#FFF}
 
-        $("#menubtn").click(function(){
-    		$("#menu").slideToggle();
-        });
-        
-        </script>
-    </body>
- </html>
+    
+     /* #レスポンシブ設計の用意 600px 以下 */
+     @media screen and (max-width:600px){
+       #headLeft{flex-direction: column;}
+      .boxA{
+      -webkit-flex-direction: column;
+      flex-direction: column;
+    	}
+      #headerLeft{flex-direction: column;}
+      #headerRight{
+        -webkit-flex-direction: column;
+        flex-direction: column;
+      }
+      .showMobileMenu #headerRight{display:block}
+      nav ul li a{display:block;background:transparent;color:#FFF;text-align:center;font-size:20px;padding:3px 15px;line-height:20px} 
+      .showMobileMenu #mobileMenuToggle{background:#344;color:#FFF}
+      nav ul li{display:block;margin:0}
+      .socialButtons{display:none}
+      header{padding:3px 50px;}
+
+
+    }
+    </style>
+</head>
+
+<body>
+
+  <!-- ヘッダー部分+navi-->
+  <header id="headerRight">
+    <nav>
+			<ul>
+				<li><a href="">main</a>
+				<li><a href="">about</a>
+				<li><a href="">github</a>
+				<!--使うかわからないmenu <li><a href="">contact</a> -->
+			</ul>
+		</nav>
+    <div id="headerLeft"><a href="#"><img src="img/snake-icon.svg" width="128" height="128" title="where computers are based life"></a></div>
+
+	</header>  <!-- ヘッダ-end-->
+
+    <span class="type">
+      <h1 class="cover-heading">
+        <span id="ityped"></span></h1>
+    </span>
+
+
+  <div class="boxA">
+  <!--  <section class="test1">
+      <strong>タイトル1 </strong>
+        <h1>アイコン[読書記録]１(readbook)</h1>
+        <p><img src="img/bookstand.svg" width="128" height="128" alt=""></p>
+    </section>
+    <section class="test1">
+      <strong>タイトル２ </strong>
+      <h1>内容概要Blog+学び蓄積型？</h1>
+      <p><img src="img/entry-icon.svg" width="128" height="128" alt="Blog等へ続く動線を作っておきたい。思考系のアイコンとか"></p>
+      </a>
+    </section>
+    <section class="test1">
+      <strong>タイトル3 </strong>
+      <h1>蓄積を証明していく。検索できるように3</h1>
+      <p><img src="img/serch.svg" width="128" height="128" alt=""></p>
+      <h2>下地としてはwebmarubeg.github.ioの方に</h2>
+
+      </a>
+    </section>-->
+  </div><!--BoxAのend-->
+      <main>
+        <article class="type">
+          <h1 class="cover-heading">SNSICON</h1>
+        </article>
+      </main>			
+
+  
+
+  <!--　footer部分　-->  
+  <footer>
+    <p>Copyright(C) 2021 All Rights Reserved. </p>
+    <!-- / #footer_end -->
+  </footer>
+  
+
+<!--　javascript設定 ※ajaxのバージョンが正しいか調査要→めっちゃ古かった！　2021年現在はこちらが新しい
+https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js　-->
+<!-- Type.jsのスクリプトをここに記載-->
+<script src="/js/script.js" type="module"></script>
+
+</body>
+</html>
